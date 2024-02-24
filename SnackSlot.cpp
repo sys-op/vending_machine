@@ -66,8 +66,10 @@ Snack *SnackSlot::getSnacks()
 
 void SnackSlot::setSnacks(const Snack *snacks)
 {
-    
-    std::copy(&snacks, &snacks + sizeof(&snacks), &this->snacks_);
+//    std::copy(std::begin(&snacks), std::end(&snacks), std:begin(this->snacks_));
+    for (int i = 0; i < this->volume_; ++i) {
+        this->snacks_[i] = snacks[i];
+    }
 }
 
 void SnackSlot::addSnack(const Snack *snack)
@@ -113,12 +115,10 @@ SnackSlot &SnackSlot::operator=(const SnackSlot &slot)
     this->current_snack_ = slot.current_snack_;
     this->volume_ = slot.volume_;
     this->snacks_ = new Snack[slot.volume_];
-    std::copy(slot.snacks_, slot.snacks_+slot.current_snack_, this->snacks_);
-    /*
+//    std::copy(std::begin(slot.snacks_), std::end(slot.snacks_), std::begin(this->snacks_));
     for (int i = 0; i < slot.current_snack_; ++i) {
         this->snacks_[i] = slot.snacks_[i];
     }
-    */
     return *this;
 }
 

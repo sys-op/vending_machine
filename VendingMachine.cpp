@@ -91,7 +91,10 @@ SnackSlot *VendingMachine::getSlots()
 
 void VendingMachine::setSlots(const SnackSlot *slots)
 {
-    std::copy(&slots, &slots+sizeof(&slots), this->slots_);
+    for (int i = 0; i < this->slotCount_; ++i) {
+        this->slots_[i] = slots[i];
+    }
+//    std::copy(std::begin(slots), std::end(slots), std::begin(this->slots_));
 //    std::copy(&slots, &(*slots+*slots->getCurrentSnack()), this->slots_);
 //    this->slots_ = &slots;
 }

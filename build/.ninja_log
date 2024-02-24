@@ -1,0 +1,6 @@
+# ninja log v5
+50	1250	1708801112654990623	CMakeFiles/vending_machine.dir/Snack.cpp.o	d06a3b5b308e89bd
+50	2001	1708801113408323352	CMakeFiles/vending_machine.dir/homework_5.9.cpp.o	e28c462aed9e8da1
+445	2462	1708803894556395084	CMakeFiles/vending_machine.dir/SnackSlot.cpp.o	f00a3b225bba1db7
+14	1000	1708803913203050213	CMakeFiles/vending_machine.dir/VendingMachine.cpp.o	928f043de843ae0a
+1001	1498	1708803913699716572	vending_machine	9dc3cc0f81a27c7

@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/vitor/cpp/skillfactory/homework_5.9/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/vending_machine.dir/homework_5.9.cpp.o -c /home/vitor/cpp/skillfactory/homework_5.9/homework_5.9.cpp",
+  "file": "/home/vitor/cpp/skillfactory/homework_5.9/homework_5.9.cpp",
+  "output": "CMakeFiles/vending_machine.dir/homework_5.9.cpp.o"
+},
+{
+  "directory": "/home/vitor/cpp/skillfactory/homework_5.9/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/vending_machine.dir/Snack.cpp.o -c /home/vitor/cpp/skillfactory/homework_5.9/Snack.cpp",
+  "file": "/home/vitor/cpp/skillfactory/homework_5.9/Snack.cpp",
+  "output": "CMakeFiles/vending_machine.dir/Snack.cpp.o"
+},
+{
+  "directory": "/home/vitor/cpp/skillfactory/homework_5.9/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/vending_machine.dir/SnackSlot.cpp.o -c /home/vitor/cpp/skillfactory/homework_5.9/SnackSlot.cpp",
+  "file": "/home/vitor/cpp/skillfactory/homework_5.9/SnackSlot.cpp",
+  "output": "CMakeFiles/vending_machine.dir/SnackSlot.cpp.o"
+},
+{
+  "directory": "/home/vitor/cpp/skillfactory/homework_5.9/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/vending_machine.dir/VendingMachine.cpp.o -c /home/vitor/cpp/skillfactory/homework_5.9/VendingMachine.cpp",
+  "file": "/home/vitor/cpp/skillfactory/homework_5.9/VendingMachine.cpp",
+  "output": "CMakeFiles/vending_machine.dir/VendingMachine.cpp.o"
+}
+]
