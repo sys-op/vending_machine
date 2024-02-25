@@ -2,6 +2,9 @@
 #include "SnackSlot.h"
 #include "VendingMachine.h"
 #include <iostream>
+#include <string>
+
+using namespace std::string_literals;
 
 const u_int16_t slotCount {10};
 
@@ -18,19 +21,19 @@ int main(){
 
   std::cout << "\n";
 
-  Snack *bounty2 = new Snack("Bounty", 200, 100.0);
-  Snack *snickers2 = new Snack("Snickers", 300, 150.0);
-  Snack *twix2 = new Snack("Twix", 250, 125.0);
+  Snack *bounty2 = new Snack("Bounty"s, 200, 100.0);
+  Snack *snickers2 = new Snack("Snickers"s, 300, 150.0);
+  Snack *twix2 = new Snack("Twix"s, 250, 125.0);
   SnackSlot *slot2 = new SnackSlot(10/*количество батончиков, которые помещаются в слот*/);
   slot2->setId(1);
   slot2->addSnack(bounty2); //Добавляем батончик в слот
   slot2->addSnack(snickers2); 
   slot2->addSnack(twix2);
 
-  Snack *bounty3 = new Snack("Bounty", 200, 100.0);
-  Snack *snickers3 = new Snack("Snickers", 300, 150.0);
-  Snack *twix3 = new Snack("Twix", 250, 125.0);
-  Snack *nuts3 = new Snack("Nuts", 400, 175.0);
+  Snack *bounty3 = new Snack("Bounty"s, 200, 100.0);
+  Snack *snickers3 = new Snack("Snickers"s, 300, 150.0);
+  Snack *twix3 = new Snack("Twix"s, 250, 125.0);
+  Snack *nuts3 = new Snack("Nuts"s, 400, 175.0);
   SnackSlot *slot3 = new SnackSlot(10/*количество батончиков, которые помещаются в слот*/);
   slot3->setId(2);
   slot3->addSnack(bounty3); //Добавляем батончик в слот
@@ -113,7 +116,7 @@ int main(){
   }
 
   std::cout << machine->getEmptySlotsCount(); // Должно выводить количество пустых слотов для снеков
-  std::cout << "Всего закусок в вендинговой машине: " << machine->getSnacksCount() << "\n";
+  std::cout << "\nВсего закусок в вендинговой машине: " << machine->getSnacksCount() << "\n";
   std::cout << *machine << "\n";
 
   /* Конец теста */

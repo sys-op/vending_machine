@@ -38,6 +38,6 @@ void Snack::setPrice(const double &price)
 }
 
 std::ostream &operator<<(std::ostream &output, const Snack &snack) {
-    output << "{" << snack.name_ << ", " << snack.calories_ << " Ккал, " << snack.price_ << " руб.}";
+    output << "{закуска " << snack.name_ << ", " << snack.calories_ << " Ккал, " << snack.price_ << " руб.}";
     return output;
 }

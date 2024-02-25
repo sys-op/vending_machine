@@ -124,7 +124,7 @@ SnackSlot &SnackSlot::operator=(const SnackSlot &slot)
 
 std::ostream &operator<<(std::ostream &output, const SnackSlot &slot)
 {
-    output << "№ " << slot.id_;
+    output << "слот № " << slot.id_;
     output << ", вместительность: " << slot.volume_;
     output << ", занято: " << slot.current_snack_;
     output << ", свободно: " << slot.volume_ - slot.current_snack_;

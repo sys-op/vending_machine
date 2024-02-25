@@ -159,7 +159,10 @@ const u_int32_t VendingMachine::getSnacksCount()
 
 std::ostream &operator<<(std::ostream &output, const VendingMachine &slot)
 {
-    output << "№ " << slot.id_ << ", вместительность " << slot.slotCount_;
+    output << "машина № " << slot.id_;
+    output << ", вместительность " << slot.slotCount_;
+    output << ", занято " << slot.current_slot_;
+    output << ", свободно " << slot.slotCount_ - slot.current_slot_;
     output << " (";
     for (int i = 0; i < slot.current_slot_; ++i) {
         if (i) output << ", ";
